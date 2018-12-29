@@ -1,8 +1,10 @@
-var emtpy_home = '<button type="button" class="btn btn-secondary" id="CreateNewSheet">\
+var emtpy_home = '\
+<button type="button" class="btn btn-secondary" id="CreateNewSheet">\
   Create new sheet\
 </button>';
 
-var new_sheet = '<form class="ScoutingSheet">\
+var new_sheet = '\
+<form class="ScoutingSheet">\
   <div class="form-group">\
     <label for="teamNumber">Team Number</label>\
     <input type="number" id="teamNumber" placeholder="Enter team number">\
@@ -36,6 +38,7 @@ var newSheetButton = document.getElementById('CreateNewSheet');
 var addTextFieldButton;
 var addTrueFalseFieldButton;
 var addNumberFieldButton;
+
 newSheetButton.addEventListener('click', function (e) {
   content.innerHTML = new_sheet;
   addTextFieldButton = document.getElementById('addNewTextField');
